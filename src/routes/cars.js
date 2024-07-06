@@ -57,7 +57,7 @@ router.get('/:brand', (req, res) => {
     (car) => car.brand.toLowerCase() === brand.toLowerCase()
   );
 
-  // Verificar se foram encontrados veículos com a marca informada
+  // Verificar se foram encontrados veículos com a marca informada 
   if (carsFilteredByBrand.length === 0) {
      return res.status(404).send(`Nenhum veículo da marca ${brand} encontrado.`);
   } else {
